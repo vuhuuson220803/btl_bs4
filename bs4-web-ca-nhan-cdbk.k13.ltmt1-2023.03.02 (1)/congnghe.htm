@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+    <style>
+      .card-body{
+        font-weight: 100px; 
+       margin-top: 10px;
+   
+      }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Web Cá Nhân
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Thoát
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Các chủ đề bài viết -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="tin-bai.htm">Phong Cách Sống</a>
+                <a class="p-2 text-muted" href="thoitrang.htm">Thời Trang</a>
+                <a class="p-2 text-muted" href="congnghe.htm">Công Nghệ</a>
+                <a class="p-2 text-muted" href="dulich.htm">Du Lịch</a>
+                
+
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+            </form> -->
+            </nav>
+        </div>
+
+        <!-- Thanh công cụ -->
+        <div class="my-2 btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group" >
+                <button type="button" title="Hiển thị dạng lướt" class="btn btn-secondary">  <i class="bi-grid-fill"></i></button>
+                <button type="button" title="Hiển thị dạng danh sách" class="btn btn-secondary">  <i class="bi-list"></i></button>
+            </div>
+            <div class="input-group">
+                <!-- <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                        <i class="bi-search"></i>
+                    </div>
+                </div> -->
+                <input type="text" class="form-control" placeholder="Tìm kiếm"
+                    aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn-outline-secondary" type="button" fdprocessedid="ewx729"><i class="bi-search"></i></button>
+                     </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://danchoioto.vn/wp-content/uploads/2021/07/neu-dang-tim-mot-mau-xe-o-to-nho-gon-cho-nu-gia-duoi-500-trieu-thi-vinfast-fadil-rat-phu-hop.jpeg.webp"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>VinFast Fadil</h2>
+                                <p class="card-text">
+                                    Ngay khi ra mắt thị trường, VinFast Fadil đã nhanh chóng tạo được sức hút lớn, lọt top 10 xe bán chạy nhất Việt Nam. Nếu đang tìm một mẫu xe ô tô nhỏ gọn cho nữ, giá dưới 500 triệu, vận hành tốt, nhiều tính năng an toàn. thì chiếc hatchback hạng A của hãng VinFast này rất phù hợp.
+
+VinFast Fadil được thiết kế dựa trên nền tảng của mẫu Opel Kark Rock đến từ châu Âu, có kích nhỏ nhỏ gọn, giúp xoay chuyển dễ dàng trong các con phố đông đúc. Động cơ Fadil sử dụng dung tích lên đến 1.4L . Điều này giúp xe có độ vọt tốt, di chuyển linh hoạt, phản ứng nhanh.
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://autodetailing.vn/wp-content/uploads/2021/12/vinfast-lux-sa2.0-1024x576.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>Xe Vinfast Lux SA2.0</h2>
+                                <p class="card-text">
+                                     Vinfast Lux SA2.0là một trong những mẫu xe thuộc phân khúc SUV được tham gia triển lãm tại Paris và được ưa chuộng tại Việt Nam bởi sự rộng rãi, thiết kế thanh lịch.Vinfast Lux SA2.0 có kích thước (dài x rộng x cao) lần lượt như sau : 4.940 x 1.960 x 1.773 cùng khoảng sáng gầm xe 192mm.Thân xe Vinfast Lux SA2.0 thiết kế khí động học cùng những đường dập nổi ở phần thân tạo sự khỏe khoắn kết hợp với bộ lazang 20 inche đến từ hãng P ZERO.Phần đuôi nhấn bởi dải led chữ V kết hợp với các chi tiết nhựa bên dưới mang lại sự cứng cáp cho phần đuôi sau.
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://images2.thanhnien.vn/Uploaded/bahung/2022_03_09/altis-5231.jpeg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>Toyota Corolla Altis </h2>
+                                <p class="card-text">
+                                    Bước sang thế hệ mới, Corolla Altis không còn được lắp ráp trong nước mà chuyển sang nhập khẩu nguyên chiếc từ Thái Lan với 3 phiên bản: 1.8G, 1.8V và 1.8HEV. Trong đó, hai phiên bản Corolla Altis 1.8G và 1.8V cùng sử dụng động cơ xăng mã 2ZR-FBE, dung tích 1.8 lít, sản sinh công suất 138 mã lực.Riêng bản Corolla Altis 1.8HEV dùng hệ thống động cơ Hybrid, kết hợp giữa động cơ xăng 1.8 lít (97 mã lực, mô men xoắn 142 Nm) với động cơ điện (53 kW và mô-men xoắn 163 Nm). Sự kết hợp này giúp Corolla Altis 1.8HEV chỉ tiêu hao 4,3 lít/100 km đường đô thị.
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://sontungauto.vn/wp-content/uploads/2022/11/ta_1.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>Bentley Bentayga First Edition</h2>
+                                <p class="card-text">
+                                    Bentley Bentayga First Edition là phiên bản đặc biệt của dòng siêu SUV Bentley Bentayga, chỉ có 608 chiếc được sản xuất trên toàn thế giới.
+Xe trang bị động cơ tăng áp kép V8 4.0L cho công suất 542 mã lực và mô-men xoắn cực đại 770Nm, kết hợp với hộp số tự động 8 cấp và hệ dẫn động AWD tiêu chuẩn. Nhờ đó, mẫu SUV nặng hơn 2,3 tấn này chỉ cần 4,4 giây để tăng tốc từ 0-100 km/h…
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static-images.vnncdn.net/files/publish/2023/2/7/anh-1-948.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>Lamborghini Invencible</h2>
+                                <p class="card-text">
+                                    “Trái tim” của mỗi chiếc xe là động cơ V12 hút khí tự nhiên, dung tích 6,5 lít, sản sinh công suất 769 mã lực và mô-men xoắn 720 Nm – tương tự như Lamborghini Aventador Ultimae. Xe sử dụng hệ dẫn động bốn bánh và hộp số ISR 7 cấp tự động xử lý việc phân bổ lực một cách hợp lý. Khả năng tăng tốc 0-100 km/h chưa được tiết lộ, song có thể sẽ dưới 3 giây như nhiều mẫu Aventador khác.
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://images2.thanhnien.vn/Uploaded/2014/thegioixe.thanhnien.com.vn/Pictures201506/minhduc/bmw-7/BMW-7-series-moi-nhe-hon-cao-cap-hon-4.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              
+                                <h2>BWM 7</h2>
+                                <p class="card-text">
+                                    BMW 7-series mới ra mắt thị trường Mỹ vào mùa thu này sẽ cung cấp 2 phiên bản lựa chọn. Phiên bản 750i xDrive được trang bị động cơ V8 tăng áp kép, dung tích 4.4 lít, cung cấp sức mạnh 445 mã lực. Trong khi đó, phiên bản 740i dung tích 3.0 lít sản sinh 320 mã lực. Dòng 750i xDrive có khả năng tăng tốc từ 0-100 km/giờ chỉ trong 4.3 giây, phiên bản còn lại mất đến 5.4 giây. Cả hai phiên bản đều sử dụng hộp số tự động 8 cấp.Với thiết kế vô lăng phẳng nên độ phản hồi  linh hoạt. 
+                                </p>
+                                <h5 class="">Tên Tác Giả * dd/mm/yyyy</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                            9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Phân trang -->
+        <div class=" btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group" >
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; 2022. Web Cá Nhân.</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+<style>
+     .card-body{
+        min-height: 400px;
+    }
+</style>
+</html>

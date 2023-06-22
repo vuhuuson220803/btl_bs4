@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Web Xe Ôtô
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Thoát
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Phân loại sản phẩm, danh mục -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="xecu.htm">Xe Cũ</a>
+                <a class="p-2 text-muted" href="xemoi.htm">Xe Mới</a>
+                <a class="p-2 text-muted" href="xethethao.htm">Xe Thể Thao</a>
+                <a class="p-2 text-muted" href="xedlich.htm">Xe Du Lịch</a>
+
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+            </form> -->
+            </nav>
+        </div>
+
+        <!-- Thanh công cụ -->
+        <div class="my-2 btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" title="Hiển thị dạng lướt" class="btn btn-secondary"> <i
+                        class="bi-grid-fill"></i></button>
+                <button type="button" title="Hiển thị dạng danh sách" class="btn btn-secondary"> <i
+                        class="bi-list"></i></button>
+            </div>
+            <div class="input-group">
+                <!-- <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                        <i class="bi-search"></i>
+                    </div>
+                </div> -->
+                <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Input group example"
+                    aria-describedby="btnGroupAddon2">
+                <div class="input-group-append">
+                    <button class="btn btn-dark btn-outline-secondary" type="button" fdprocessedid="ewx729"><i
+                            class="bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn.chotot.com/ZaOZzuneYLpRFpmLxxbGV1EoKC4tw7OCIfHBv9SOvMM/preset:view/plain/194273bb37bd6d2d7dd38b844ba76677-2827822745339032317.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Toyota Vios 1.5 G 2017</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Auto 7 địa chỉ 204 ngõ 233 phạm văn Đồng
+                                            gần cổng bộ công an bán xe Toyota vios 1.5 G dk 17 một chủ từ mới màu vàng
+                                            cát. Cam kết xe ko kinh doanh ko dịch vụ ko đâm đụng ko ngập nước máy số Zin
+                                            100% ae mua xe có thể nhờ thợ giỏi kiểm tra hoặc mang vào hãng tét Cho công
+                                            tâm. Ae nào phát hiện ra xe lỗi hoặc tua đồng hồ em gửi 10 tr tiền chi phí
+                                            đi lại cho ae đỡ mất thời gian
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        398.000.000 <u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://img1.oto.com.vn/crop/575x430/2023/04/13/20230413101348-058b_wm.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Porsche Cayenne 2019</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Xe chạy 1.9 vạn km.
+                                            Xe được trang bị option: Cửa sổ trời toàn cảnh, ghế chỉnh
+                                            điện 14 hướng, chìa khoá thông minh, giảm sóc bóng hơi.
+                                            Xe sử dụng động cơ xăng V6 tăng áp 3.0L. Cỗ máy này có khả
+                                            năng sản sinh công suất tối đa 340 mã lực, mô men xoắn cực
+                                            đại 450 Nm.Toàn bộ sức mạnh được truyền xuống hệ dẫn
+                                            động 4 bánh toàn thời gian thông qua hộp số 8 cấp Tiptronic.
+
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        500,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://img1.oto.com.vn/crop/575x430/2023/05/30/20230530133700-b198_wm.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Lexus RX 350 Luxury </h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Lexus RX350 sản xuất 2016 biển HN.
+                                            Xe trang bị: Hệ thống giải trí màn hình 12.3 inch, cam 360, dàn
+                                            âm thanh cao cấp Mark Levinson, cảnh bảo lệch làn, phanh khoảng
+                                            cách.
+                                            - Ghế chỉnh điện nhớ 3 vị trí.
+                                            - Hud kính; Sạc không dây....Bản xuất Mỹ - Cam kết xe zin nguyên
+                                            bản mua bán sang tên ngay.Quý vị quan tâm qua em xem xe cụ thể chi
+                                            tiết nhé!Chi phí thực tế có thể thay đổi theo từng trường hợp.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        2,350,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn1.otosaigon.com/data-resize/attachments/2144/2144372-116dae8107fb01b585b1bc67d0c49b3f.jpg?w=440"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>KIA Sportage 2.0 AT 2012</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Gia đình đổi xe cần bán Kia Sportage mua
+                                            và đăng ký lần đầu năm 2012 bản cao cấp nhất 2.0 số tự động,xe chính chủ
+                                            đứng bán.
+                                            Xe đi được 57,000km chủ yếu đưa đón con trong phố,bảo dưỡng định kỳ mỗi
+                                            5000km,vừa thay 4 vỏ mới.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        200,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn1.otosaigon.com/data-resize/attachments/2944/2944217-c56a6a9d88a334e99d9dbdb9dac7415f.jpg?w=440"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Ford Focus 2014 bản S</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Focus 2014 bản S full option, cửa sổ
+                                            trời, 2 dàn lạnh độc lập, đã lên màn adroid, bi cầu bi gầm, 4 bánh abs,
+                                            chống trơn trượt, cân bằng điện tử, cruise control, lim giới hạn tốc độ
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        380,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn1.otosaigon.com/data-resize/attachments/2948/2948969-ea74b82f30627b599820fe281c97dfa8.jpg?w=750"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>FOTUNER máy dầu, số sàn, màu bạc, 2016</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Xe gia đình, biển trắng, đi kỹ. Odo
+                                            199.000; đăng kiểm 2năm tới 2025. 4 vỏ mới Bridgestone.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        600,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn1.otosaigon.com/data-resize/attachments/2456/2456589-05a971a5c87848b99dbc908d5f32d264.jpg?w=440"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Toyota Camry 2001 Grande V6 3.0</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Xe màu ghi hồng sang trọng.
+                                            - Máy nổ êm ru, không một chút lỗi lầm ... Vận hành êm nhẹ, động cơ V6 thật
+                                            manh mẽ.
+                                            - Điều hoà mát mẽ
+                                            Xe rất phù hợp cho gia đình, đi du lịch, dã ngoại. Nhân viên văn phòng đi
+                                            làm việc trong những ngày nắng nóng nảy lửa, hay mưa gió bão bùng
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        212,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn1.otosaigon.com/data-resize/attachments/2902/2902082-eb5c0db35f65a0b0f335044d9fbdd351.jpg?w=750"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Chevrolet captiva ltz 2012</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Chevrolet Captiva bản cao cấp Ltz
+                                            sx cuối 2011 model 2012 form.mới. máy Eco* Xe gốc tp nên ko mất 20 củ khi về Hn hay SG
+                                            * Xe cứng ngắc. Sơn đồng đến nội thất đẹp.
+                                            * Máy 2.4 ecotech êm ru. Tiết kiệm
+                                            * Xe 7c rộng rãi. khung gầm chắc nịch. * Mới thay 4 vỏ brigstone mới tinh.....................
+                                         
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        200,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://img1.oto.com.vn/crop/575x430/2023/05/29/38f07677-5e8e_wm.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Toyota Vios 1.5E MT 2014</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Toyota Vios 2014 bản E số sàn 1.5 màu bạc xịn, gia đình sử dụng, full đồ chơi.
+                                            Xe đẹp từ trong ra ngoài, nội thất đẹp, sơn xi mỏng tanh.
+                                            Odo 10 vạn.
+                                            Trang bị abs, túi khí, lazang thể thao, áp suất lốp, 4 lốp mới, hệ thống đèn bi salo siêu sáng, khóa khiển thông minh, màn hình to cam lùi, hành trình.
+                                            Máy số keo chỉ zin. 
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        1,500,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Phân trang -->
+        <div class=" btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; 2022. Web Cá Nhân</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+<style>
+    .card-body {
+        min-height: 400px;
+    }
+</style>
+
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Web BS4
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Thoát
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Phân loại sản phẩm, danh mục -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="xecu.htm">Xe Cũ</a>
+                <a class="p-2 text-muted" href="xemoi.htm">Xe Mới</a>
+                <a class="p-2 text-muted" href="xethethao.htm">Xe Thể Thao</a>
+                <a class="p-2 text-muted" href="xedlich.htm">Xe Du Lịch</a>
+
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+            </form> -->
+            </nav>
+        </div>
+
+        <!-- Thanh công cụ -->
+        <div class="my-2 btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" title="Hiển thị dạng lướt" class="btn btn-secondary"> <i
+                        class="bi-grid-fill"></i></button>
+                <button type="button" title="Hiển thị dạng danh sách" class="btn btn-secondary"> <i
+                        class="bi-list"></i></button>
+            </div>
+            <div class="input-group">
+                <!-- <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                        <i class="bi-search"></i>
+                    </div>
+                </div> -->
+                <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Input group example"
+                    aria-describedby="btnGroupAddon2">
+                <div class="input-group-append">
+                    <button class="btn btn-dark btn-outline-secondary" type="button" fdprocessedid="ewx729"><i
+                            class="bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/HQpaiWbMNv.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Porsche 911 GT3</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Porsche 911 được đánh giá cao với động cơ
+                                            6 xi-lanh phẳng, dung tích 4.0 lít, công suất tối đa lên đến 500 mã lực.
+                                            Công suất tối đa ở vòng tua máy ấn tượng lên đến 8.250 vòng/ phút. Thêm vào
+                                            đó, điều càng làm bạn ấn tượng hơn chính là âm thanh cực đỉnh phát ra từ ống
+                                            xả
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        14.000.000.000 <u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/PvwNFw8vg5.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Audi R8</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Audi R8 có thể coi là “ngôi sao vụt sáng’
+                                            soán ngôi vị siêu sao của Porsche 911 bởi hãng Audi đã tận dụng hết những
+                                            kinh nghiệm có được trong giải đua Le Mans 24 Hours để sáng chế ra chiếc xe
+                                            oto thể thao này.
+
+                                            Xe được thiết kế với động cơ đặt giữa với hệ dẫn động 4 bánh tiêu chuẩn.
+
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        50,000,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/fTFhsm9gY8.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>BMW M2</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">BMW M2 là mẫu coupe nhỏ gọn được thiết kế
+                                            chuyên dành cho yêu cầu với xe đua đường trường của Đức. Thoạt đầu, bạn có
+                                            thể nhầm lẫn với thiết kế của M3 nhưng vì thiết kế M3 ngày càng to; M2 lại
+                                            được chú ý nhiều hơn với thiết kế nhỏ, linh hoạt cũng như động cơ được thiết
+                                            kế để đạt được vận tốc tối đa trên khung đường ngắn.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        23,500,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/8sgUXnUb7M.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Acura NSX</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Acura NSX trở lại với thiết kế ấn tượng
+                                            từ hình dáng bên ngoài đến động cơ bên trong. Động cơ tăng áp kép V6 với
+                                            dung tích 3.5 lít cộng hưởng cùng 01 mô tơ điện phía trước và 02 mô tơ điện
+                                            phía sau khiến cho xe có thể đạt được công suất 573 mã lực và mô-men xoắn
+                                            cực đại 645 Nm.Với hệ động cơ trên, Acura NSX chỉ trong 3.1 giây để có thể
+                                            đạt tốc độ tối đa 307km/h từ 0-97 km/h,chiếc xe hơi thể thao này còn được
+                                            tích hợp 04 chế độ lái khác nhau: Quiet, Sport, Sport + và Track.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        20,000,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/2VXxGz6DpB.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Chevrolet Corvette ZR1</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Chevrolet Corvette ZR1 2019 được chế tạo
+                                            với động cơ V8, dung tích 6.2 lít cùng với hệ thống siêu nạp để xe có thể
+                                            đạt được công suất tối đa 755 mã lực và mô-men xoắn cực đại lên đến 970 Nm.
+                                            Bởi vì hệ động cơ ấn tượng này, xe ô tô thể thao Chevrolet Corvette ZR1 2019
+                                            có thể đạt tốc độ 97km/h chỉ trong 3 giây kể từ lúc còn đứng yên và tốc độ
+                                            cực đại lên đến 341 km/h.Dòng xe được đi kèm với phụ kiện ấn tượng như cánh
+                                            gió High Wing phía sau
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        38,000,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/TYTCJF9bOP.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Jaguar F-Type SVR</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Jaguar F-Type là dòng xe được tích hợp cả
+                                            hai yếu tố: thiết kế mượt mà, ấn tượng mà động cơ được xếp vào danh sách
+                                            đáng chú ý. Sử dụng động cơ tăng áp V8 với dung tích 5.0 lít cùng với phụ
+                                            kiện như cánh gió sợi carbon phía sau, dòng Jaguar F-Type có thể tăng tốc từ
+                                            0 đến 112 km/h chỉ trong 3.5 giây, và vận tốc tối đa đạt được là 321 km/h.
+                                            Điểm cộng cho Jaguar F-Type là ghế lái và vô lăng được trợ lực điện, khiến
+                                            người lái cảm thấy thoải mái và tuyệt vời.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        600,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/unl1pWf5nE.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Lamborghini Aventador S</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Lamborghini Aventador S có thể không bao
+                                            giờ là dòng xe khiến người yêu xe phải thất vọng bởi động cơ V12, dung tích
+                                            6.5 lít được đặt phía sau hai ghế ngồi. Xe hơi thể thao Lamborghini
+                                            Aventador S có thể tạo ra công suất tối đa 349 km/h cùng với khả năng tăng
+                                            tốc trong thời gian ngắn 2.9 giây, từ 0 lên 97 km/h. Dòng xe có cả hai phiên
+                                            bản mui cố định và mui trần.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        21,000,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/mwiOOILtNa.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Mercedes-AMG GT R</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Dòng xe AMG GT là mẫu ô tô thể thao được
+                                            trang bị động cơ tăng áp kép V8, dung tích 4.0 lít, khiến tạo công suất tối
+                                            đa 577 mã lực và mô-men xoắn cực đại 700Nm. Đây là dòng xe có động cơ được
+                                            lắp ráp thủ công theo cách truyền thống của AMG. Xe được tích hợp hộp số tùy
+                                            chỉnh bằng tay, lốp xe rộng cũng như hệ thống kiểm soát lực bám 9 chế độ
+                                            giúp xe dễ dàng lướt qua những cung đường tự do.
+
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        20,000,000,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.carmudi.vn/wp-content/uploads/2020-08/R7VnCq7hjA.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <p class="card-text">
+                                    <font style="vertical-align: inherit;">
+                                        <h3>Mazda MX-5 Miata</h3>
+                                        <br>
+                                        <font style="vertical-align: inherit;">Dòng xe thể thao ô tô Mazda MX-5 Miata
+                                            2019 được biết đến không phải vì hệ động cơ mà vì lần đầu được lắp đặt vô
+                                            lăng gật gù, động cơ được nâng cấp từ 155 mã lực lên 181 mã lực cùng với
+                                            mô-men xoắn lên đến 7.500 vòng/ phút. Vào năm 2019, phiên bản kỉ niệm 30 năm
+                                            của dòng Mazda MX-5 Miata ở Mỹ với 500 chiếc được tiêu thụ hết ngay lập tức.
+                                            Giá của ô tô thể thao Mazda MX-5 Miata “mềm” hơn so với những dòng xe khác.
+                                        </font>
+                                    </font>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi bi-cart-fill"></i>Mua
+
+                                        </button>
+
+                                    </div>
+                                    <h2>
+                                        1,500,000<u>đ</u>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Phân trang -->
+        <div class=" btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; 2022. Web Cá Nhân</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+<style>
+    .card-body {
+        min-height: 400px;
+    }
+</style>
+
+</html>
